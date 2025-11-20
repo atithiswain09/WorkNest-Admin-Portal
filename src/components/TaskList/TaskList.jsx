@@ -1,61 +1,62 @@
-import React from 'react'
+import React from "react";
 
 function TaskList() {
   return (
-    <div id='tasklist'  className='h-100 w-full cursor-pointer  overflow-auto flex gap-2 justifay-start flex-nowrap py-3 p-3  mt-10'>
-        <div className='h-full shrink-0  text-center   rounded-2xl  w-[300px] bg-yellow-500'>
-            <div className='flex  items-center justify-between p-5'>
-                <h3 className='bg-red-400 text-xsm p-2 w-[30%] text-center rounded'>High</h3>
-                <h4 className='text-sm'>17 Nov 2025</h4>
-            </div>
-            <h2 className='mt-5 p-2 text-xl font-semibold'>
-                Make A Youtube Video
-            </h2>
-            <p className='text-sm'>Make a video Regrading how to build LOGIC in React <js />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, a! </p>
-          
+    <div
+      id="tasklist"
+      className="w-full h-auto cursor-pointer overflow-x-auto flex gap-6 py-6 px-4 mt-10"
+    >
+
+      {/* HIGH PRIORITY */}
+      <div className="min-w-[300px] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-[#fff1f0] to-[#ffe3e3] border border-red-200">
+        <div className="flex items-center justify-between p-4">
+          <span className="text-xs bg-red-500 text-white px-3 py-1 rounded-lg font-semibold">
+            High
+          </span>
+          <span className="text-sm text-gray-600 font-medium">17 Nov 2025</span>
         </div>
-        <div className='h-full shrink-0  text-center   rounded-2xl  w-[300px] bg-pink-500'>
-            <div className='flex  items-center justify-between p-5'>
-                <h3 className='bg-red-400 text-xsm p-2 w-[30%] text-center rounded'>High</h3>
-                <h4 className='text-sm'>17 Nov 2025</h4>
-            </div>
-            <h2 className='mt-5 p-2 text-xl font-semibold'>
-                Make A Youtube Video
-            </h2>
-            <p className='text-sm'>Make a video Regrading how to build LOGIC in React <js />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, a! </p>
-          
+        <h2 className="px-4 text-lg font-bold text-gray-900">
+          Make A Youtube Video
+        </h2>
+        <p className="text-sm px-4 pb-4 mt-1 text-gray-700 leading-relaxed">
+          Create a detailed video explaining how to build logic in React.
+        </p>
+      </div>
+
+      {/* MEDIUM PRIORITY */}
+      <div className="min-w-[300px] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-[#fff7e6] to-[#ffedcc] border border-amber-200">
+        <div className="flex items-center justify-between p-4">
+          <span className="text-xs bg-amber-500 text-white px-3 py-1 rounded-lg font-semibold">
+            Medium
+          </span>
+          <span className="text-sm text-gray-700 font-medium">20 Nov 2025</span>
         </div>
-        <div className='h-full shrink-0  text-center   rounded-2xl  w-[300px] bg-red-500'>
-            <div className='flex  items-center justify-between p-5'>
-                <h3 className='bg-red-400 text-xsm p-2 w-[30%] text-center rounded'>High</h3>
-                <h4 className='text-sm'>17 Nov 2025</h4>
-            </div>
-            <h2 className='mt-5 p-2 text-xl font-semibold'>
-                Make A Youtube Video
-            </h2>
-            <p className='text-sm'>Make a video Regrading how to build LOGIC in React <js />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, a! </p>
-          
+        <h2 className="px-4 text-lg font-bold text-gray-900">
+          Revise React Hooks
+        </h2>
+        <p className="text-sm px-4 pb-4 mt-1 text-gray-700 leading-relaxed">
+          Practice useEffect, useContext, and custom hooks deeply.
+        </p>
+      </div>
+
+      {/* LOW PRIORITY */}
+      <div className="min-w-[300px] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-[#e6fff4] to-[#ccffea] border border-green-200">
+        <div className="flex items-center justify-between p-4">
+          <span className="text-xs bg-green-500 text-white px-3 py-1 rounded-lg font-semibold">
+            Low
+          </span>
+          <span className="text-sm text-gray-700 font-medium">25 Nov 2025</span>
         </div>
-        <div className='h-full shrink-0  text-center   rounded-2xl  w-[300px] bg-green-500'>
-            <div className='flex  items-center justify-between p-5'>
-                <h3 className='bg-red-400 text-xsm p-2 w-[30%] text-center rounded'>High</h3>
-                <h4 className='text-sm'>17 Nov 2025</h4>
-            </div>
-            <h2 className='mt-5 p-2 text-xl font-semibold'>
-                Make A Youtube Video
-            </h2>
-            <p className='text-sm'>Make a video Regrading how to build LOGIC in React <js />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, a! </p>
-          
-        </div>
-        
-        
-       
+        <h2 className="px-4 text-lg font-bold text-gray-900">
+          Plan Next Project
+        </h2>
+        <p className="text-sm px-4 pb-4 mt-1 text-gray-700 leading-relaxed">
+          Decide next project with MERN stack features.
+        </p>
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default TaskList
+export default TaskList;

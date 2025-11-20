@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function Login() {
+function Login({handleLogin}) {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
 
   const HandelSubmit = (e) => {
     e.preventDefault();
-
+      handleLogin(email,password)
     toast.success("Login Successful!", {
       position: "top-center",
       autoClose: 800,
