@@ -1,45 +1,46 @@
+
 const cpemployees = [
 {
   "employees": [
     {
       "id": 1,
-      "name": "Rahul Sharma",
+      "firstName": "Rahul Sharma",
       "email": "employee1@example.com",
       "password": "123",
       "tasks": {
         "active": 1,
-        "newTask": 1,
+        "newTask": 6,
         "completed": 1,
-        "failed": 1
+        "failed": 4
       }
     },
     {
       "id": 2,
-      "name": "Priya Gupta",
+      "firstName": "Priya Gupta",
       "email": "employee2@example.com",
       "password": "123",
       "tasks": {
-        "active": 1,
-        "newTask": 1,
+        "active": 2,
+        "newTask": 7,
         "completed": 1,
         "failed": 0
       }
     },
     {
       "id": 3,
-      "name": "Aman Verma",
+      "firstName": "Aman Verma",
       "email": "employee3@example.com",
       "password": "123",
       "tasks": {
         "active": 1,
-        "newTask": 1,
-        "completed": 0,
+        "newTask": 5,
+        "completed": 19,
         "failed": 1
       }
     },
     {
       "id": 4,
-      "name": "Sneha Arora",
+      "firstName": "Sneha Arora",
       "email": "employee4@example.com",
       "password": "123",
       "tasks": {
@@ -51,7 +52,7 @@ const cpemployees = [
     },
     {
       "id": 5,
-      "name": "Vikas Yadav",
+      "firstName": "Vikas Yadav",
       "email": "employee5@example.com",
       "password": "123",
       "tasks": {
@@ -65,7 +66,7 @@ const cpemployees = [
 
   "admin": {
     "id": 1,
-    "name": "Admin User",
+    "firstName": "Admin User",
     "email": "admin@example.com",
     "password": "123"
   }
